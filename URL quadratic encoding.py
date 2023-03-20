@@ -5,7 +5,7 @@ def double_parse(s):
     for i in s:
         if(i==urllib.parse.quote(i)):
             by = bytes(i,'UTF-8')    #先将输入的字符串转化成字节码
-            hex = by.hex()    #
+            hex = by.hex()    #转hex
             k+="%"
             k+=hex
         else:
